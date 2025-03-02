@@ -1,22 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+import { DEFAULT_LANG } from "src/consts";
+return Astro.redirect(`/${DEFAULT_LANG}/`);
 ---
 
 <BaseLayout>
 	 <section id="intro">
-   	<p class="name">Hi, my name is <span>Andrew Weisbeck.</span></p>
-    	<h2>I love writing awesome code that
-      solves problems and saves money for small businesses.</h2>
-				<h3 class="headlineintro">Freelance Full-Stack Developer | Durham-Chapel Hill, NC <img id="ncflag" class="ncflagicon" alt="north carolina state flag by icons8.com" src="https://img.icons8.com/color/48/000000/north-carolina-flag.png"/></h3>
-  				<p>I am currently seeking full-time employment opportunities as a full-stack developer or software engineer.
-					<h4>I'm currently open to new opportunities as a full-stack developer or software engineer 0 check out<a href="doc/AndrewWeisbeckDevResume.pdf" alt="andrew weisbeck resume" class="buttontwo">Resume</a>.</h4>
-  				<p>Check out my content page - there you will find my <a href="blog.html" alt="Andrew Weisbeck Blog Page">Blog</a>, <a href="https://geauxweisbeck4.substack.com" alt="Andrew Weisbeck Newsletter page">Newsletter</a>, and other learning resources and research.</p>
-  				<p>Follow me on Twitter <a href="https://twitter.com/GeauxWeisbeck4" alt="Andrew Weisbeck Twitter">@GeauxWeisbeck4</a> to keep up with me - feel free to say hi!</p>
-
-<!-- Carbon Badge -->
-					<!-- <div id="wcb" class="carbonbadge"></div>
-  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script> -->
-</section>
+   		<p class="name">Hi, my name is <span>Andrew Weisbeck.</span></p>
+    	<h2>I love writing awesome code that solves problems and saves money for small businesses.</h2>
+		<h3 class="headlineintro">Freelance Full-Stack Developer | Durham-Chapel Hill, NC <img id="ncflag" class="ncflagicon" alt="north carolina state flag by icons8.com" src="https://img.icons8.com/color/48/000000/north-carolina-flag.png"/></h3>
+		<h4>I'm currently seeking new opportunities as a full-stack developer or software engineer - to learn more about my experience check out my <a href="https://andrewweisbeck.com" class="buttontwo">Resume</a>.</h4>
+		<p>You can view some of my latest writing on my <a href="/blog">Blog</a>, or by reading my <a href="https://geauxweisbeck4.substack.com">Newsletter</a>.</p>
+		<p>Follow me on Twitter <a href="https://twitter.com/GeauxWeisbeck4">@GeauxWeisbeck4</a> to keep up with me - feel free to say hi!</p>
+	</section>
 
 
 
