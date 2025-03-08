@@ -21,7 +21,7 @@ const blog = defineCollection({
 		heroImage: z.object({
 			src: z.string(),
 			alt: z.string().optional(),
-		}),
+		}).optional(),
 		ogImage: z.string().optional(),
 		tags: z.array(z.string()).default([]).transform(removeDupsAndLowercase).optional(),
 		series: z.string().optional(),
@@ -47,7 +47,7 @@ const projects = defineCollection({
 		heroImage: z.object({
 			url: z.string(),
 			alt: z.string().optional()
-		}),
+		}).optional(),
 		ogImage: z.string().optional(),
 		stack: z.array(z.string()).default([]).transform(removeDupsAndLowercase),
 		platform: z.string().optional(),
