@@ -1,7 +1,7 @@
 ---
-title: 'Project 1'
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
-pubDate: 'Apr 03 2023'
+title: 'Developer Portfolio Site Version 3.0'
+description: 'This is technically the third version of my developer portfolio website - even though the design is very similar to my very first portfolio website.'
+pubDate: 'Mar 09 2025'
 heroImage:
     url: '/blog-placeholder-about.jpg'
     alt: 'GitHub wallpaper'

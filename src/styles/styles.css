@@ -9,7 +9,9 @@
     --teal: #03C4A1;
     --aqua: #86fbfb;
     --white: #f7f8fa;
+    --cream: #FDF2D9;
     --red: #C70039;
+    --scarlett: #E41C38;
     --orange: #f37f13;
     --font-size: 1.3rem;
     --mono: "IBM", monospace;
@@ -33,7 +35,7 @@ body {
     margin: 0;
     font-family: var(--sans);
     background-color: var(--black);
-    color: var(--white);
+    color: var(--cream);
     font-size: var(--font-size);
 }
 
@@ -43,14 +45,18 @@ h3 {
     margin: 0;
 }
 
-a {
+/* a {
     color: var(--teal);
+    padding: 0.5px;
 }
 
 a:hover {
-    color: var(--magenta);
+    color: var(--dkblue);
+    background-color: var(--white);
+    padding: 0.5px;
+    border-radius: 5px;
     text-decoration: none;
-}
+} */
 
 img {
     width: 100%;
@@ -121,59 +127,57 @@ img {
 
 .about-btn {
     background-color: var(--hotmag);
-    color: white;
+    color: var(--white);
     border-radius: 5px;
     font-family: var(--mono);
     text-decoration: none;
     padding: 5px;
 }
 .about-btn:hover {
-    background-color: white;
+    background-color: var(--cream);
     color: var(--hotmag);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
-    font-weight: bold;
 }
 .about-btn:active {
-    background-color: var(--hotmag);
-    color: white;
+    background-color: var(--dkblue);
+    color: var(--cream);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
 }
 
 .portfolio-btn {
-    background-color: var(--red);
-    color: white;
+    background-color: var(--scarlett);
+    color: var(--white);
     border-radius: 5px;
     font-family: var(--mono);
     text-decoration: none;
     padding: 5px;
 }
 .portfolio-btn:hover {
-    background-color: white;
+    background-color: var(--cream);
     color: var(--red);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
-    font-weight: bold;
 }
 .portfolio-btn:active {
-    background-color: var(--red);
-    color: white;
+    background-color: var(--dkblue);
+    color: var(--cream);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
 }
 
 .buttonone {
     background-color: var(--orange);
-    color: white;
+    color: var(--white);
     border-radius: 5px;
     font-family: var(--mono);
     text-decoration: none;
@@ -181,26 +185,25 @@ img {
 }
 
 .buttonone:hover {
-    background-color: white;
+    background-color: var(--cream);
     color: var(--orange);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
-    font-weight: bold;
 }
 .buttonone:active {
-    background-color: var(--orange);
-    color: white;
+    background-color: var(--dkblue);
+    color: var(--cream);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
 }
 
 .buttontwo {
     background-color: var(--teal);
-    color: white;
+    color: var(--white);
     border-radius: 5px;
     font-family: var(--mono);
     text-decoration: none;
@@ -208,46 +211,44 @@ img {
 }
 
 .buttontwo:hover {
-    background-color: white;
+    background-color: var(--cream);
     color: var(--teal);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
-    font-weight: bold;
 }
 .buttontwo:active {
-    background-color: var(--blue);
-    color: white;
+    background-color: var(--dkblue);
+    color: var(--cream);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
 }
 
 .buttonthree {
     background-color: var(--blue);
-    color: white;
+    color: var(--white);
     border-radius: 5px;
     font-family: var(--mono);
     text-decoration: none;
     padding: 5px;
 }
 .buttonthree:hover {
-    background-color: white;
+    background-color: var(--cream);
     color: var(--blue);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
-    font-weight: bold;
 }
 .buttonthree:active {
-    background-color: var(--teal);
-    color: white;
+    background-color: var(--dkblue);
+    color: var(--cream);
     border-radius: 5px;
     font-family: var(--mono);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 5px;
 }
 
@@ -255,7 +256,6 @@ img {
 
 
 /* contact section */
-
 #contact {
     width: 400px;
     text-align: center;
@@ -267,7 +267,7 @@ img {
     margin-top: 3rem;
 }
 
-/* navigation */
+/* navigation
 nav {
     font-family: var(--mono);
     font-size: 80%;
@@ -276,9 +276,10 @@ nav {
 
 nav h1 a {
     font-family: var(--sans);
+    color: var(--teal);
 }
 
-nav ul {
+header nav {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -302,27 +303,23 @@ nav [class*="fa-"] {
 
 nav h1 [class*="fa-"] {
     font-size: 100%;
-    color: var(--white);
+    color: var(--cream);
 }
 
 nav a {
-    color: white;
+    color: cream;
     text-decoration: none;
     display: block;
 }
 
 nav a:hover,
 nav [class*="fa-"]:hover {
-    color: var(--magenta);
-}
-
-.icon-margin {
-    margin-left: 1rem;
+    color: var(--blue);
 }
 
 .button {
     background-color: var(--red);
-    color: white;
+    color: cream;
     padding: 0.5rem;
     border-radius: 5px;
     font-family: var(--mono);
@@ -331,9 +328,9 @@ nav [class*="fa-"]:hover {
 }
 
 .button:hover {
-    color: white;
+    color: cream;
     background-color: var(--blue);
-}
+} */
 
 /* projects section */
 #projects {
@@ -366,7 +363,7 @@ nav [class*="fa-"]:hover {
 .blackbox {
     padding: 1rem;
     border-radius: 10px;
-    color: white;
+    color: cream;
     background-color: var(--black);
     font-size: 1rem;
     line-height: 1.5;
@@ -453,12 +450,12 @@ footer ul {
 }
 
 @media (min-width: 850px) {
-    nav {
+    header {
         max-width: 1200px;
         margin: 0 auto;
     }
 
-    nav li:first-child {
+    header div:first-child {
         flex-basis: auto;
         text-align: left;
         margin-right: auto;

@@ -1,24 +1,133 @@
-<nav>
-	<ul>
-        <li>
-            <h1>
-				<a class="logo" href="index.html"><span class="fa-solid fa-at"></span>GeauxWeisbeck4</a>
-			</h1>
-        </li>
-        
-        <li><a href="about.html">About</a></li>
-        <li><a href="https://andrewweisbeck.blog">Blog</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="/links">Links</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="icon-margin"><a href="https://github.com/GeauxWeisbeck4"><span class="fa-brands fa-github-square"><span class="sr-only">Github</span></a></li>
-        <li><a href="https://gitlab.com/geauxweisbeck4"><span class="fa-brands fa-gitlab"><span class="sr-only">GitLab</span></a></li>
-        <li><a href="https://open.spotify.com/show/6qz6bgcLCBCiyLKlMi2JyZ?si=1f03ddd722ef4b58"><span class="fa-solid fa-podcast"></span></a></li>
-        <li><a href="https://subscribe.geauxweisbeck4.dev" class="button">Subscribe</a></li>
-    </ul>
-</nav>
+<section id="header">
+    <header>
+        <nav>
+            <div class="logo-div">
+                <a class="logo" href="/">@GeauxWeisbeck4</a>
+            </div>
+            <div class="navlink-div">
+                <a class="navlink-btn" href="/about">About</a>
+                <a class="navlink-btn" href="/blog">Blog</a>
+                <a class="navlink-btn" href="/projects">Projects</a>
+                <a class="navlink-btn" href="/links">Links</a>
+                <a class="navlink-btn" href="/contact">Contact</a>
+            </div>  
+            <div class="icon-navlinks">
+                <a href="https://github.com/GeauxWeisbeck4"><span class="fa-brands fa-github"><span class="sr-only">Github</span></a>
+                <a href="https://gitlab.com/geauxweisbeck4"><span class="fa-brands fa-gitlab"><span class="sr-only">GitLab</span></a>
+                <a href="https://linkedin.com/in/geauxweisbeck4"><span class="fa-brands fa-linkedin"><span class="sr-only">LinkedIn</span></a>
+                <!-- <a href="https://codepen.io/geauxweisbeck4"><span class="fa-brands fa-codepen"><span class="sr-only">Codepen</span></a> -->
+                <a href="https://dev.to/geauxweisbeck4"><span class="fa-brands fa-dev"><span class="sr-only">Dev.to</span></a>
+                <a href="https://geaux-code.hashnode.dev"><span class="fa-brands fa-hashnode"><span class="sr-only">Hashnode</span></a>
+                <!-- <a href="https://geauxweisbeck4.medium.com"><span class="fa-brands fa-medium"><span class="sr-only">Medium</span></a> -->
+                <!-- <a href="https://open.spotify.com/show/6qz6bgcLCBCiyLKlMi2JyZ?si=1f03ddd722ef4b58"><span class="fa-solid fa-podcast"><span class="sr-only">Podcast</span></a> -->
+            </div>
+            <div class="button-div">
+                <a href="/donate" class="button">Subscribe</a>
+            </div>
+        </nav>
+    </header>
+</section>
+
+
 <style>
-    logo {
-        color: var(--blue);
-    }
+/* navigation */
+header {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 4rem 1rem;
+}
+
+nav a {
+    font-family: var(--mono);
+}
+
+header nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav [class*="fa-"] {
+    font-size: 100%;
+    color: var(--teal);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+nav [class*="fa-"]:hover {
+    color: var(--cream);
+    background-color: var(--dkblue);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.navlink-div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.icon-navlinks {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    gap: 1rem;
+}
+.navlink-btn {
+    color: var(--white);
+    font-family: var(--mono);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.navlink-btn:hover {
+    color: var(--cream);
+    font-family: var(--mono);
+    text-decoration: none;
+    background-color: var(--dkblue);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+#list-icon span {
+    font-size: 1rem;
+}
+.logo {
+    font-size: 1.5rem;
+    color: var(--teal);
+    font-family: var(--mono);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.logo:hover {
+    color: var(--cream);
+    background-color: var(--dkblue);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.button-div {
+    display: block;
+    margin-left: 2rem;
+}
+.button {
+    background-color: var(--scarlett);
+    color: var(--white);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.button:hover {
+    color: var(--cream);
+    background-color: var(--dkblue);
+}
 </style>
