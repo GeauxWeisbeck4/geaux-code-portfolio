@@ -1,0 +1,46 @@
+---
+interface Project {
+    title: string;
+    description: string;
+    summaryOne: string;
+    summaryTwo: string;
+    imageUrl: string;
+    link: string;
+    technologies: string[];
+}
+
+// export function sortProjects(projects: Project[]) {
+//     const projectArray: Project[] = [];
+//     const reversedProjectArray: Project[] = [];
+
+//     projects.forEach((project, index) => {
+//         if (index % 2 === 0) {
+//             projectArray.push(project);
+//         } else {
+//             reversedProjectArray.push(project);
+//         }
+//     });
+
+//     return { projectArray, reversedProjectArray };
+// }
+
+const { project, reverse } = Astro.props;
+---
+<article class={reverse ? 'reverse': ''}>
+    <div class="text">
+        <h4>{project.title}</h4>
+        <h3>{project.description}</h3>
+        <p class="blackbox">
+            {project.summaryOne}
+            <br />
+            {project.summaryTwo}
+            <h4>Technologies used include:</h4>
+            <ul>
+                {project.technologies.map((tech: string[]) => (
+                    <li>{tech}</li>
+                ))}
+            </ul>
+        </p>
+    </div>
+    <img src={project.imageUrl} alt={project.title} />
+</article>

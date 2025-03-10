@@ -1,132 +1,69 @@
+---
+import { sortProjects } from '../../utils/sortProjects';
+import FeaturedProjectCard from './FeaturedProjectCard.astro';
 
-  <section class="section-blue" id="projects">
+const projects = [
+  {
+    title: 'Andrew Developer Portfolio Site',
+    description: 'Full-Stack Developer Portfolio Website',
+    summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
+    summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
+    imageUrl: '/blog-placeholder-3.jpg',
+    link: 'https://geauxweisbeck4.dev',
+    technologies: ['Astro', 'Typescrpit', 'HTML', 'CSS']
+  },
+  {
+    title: 'MT Man Adventures',
+    description: 'Blog Website',
+    summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
+    summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
+    imageUrl: '/blog-placeholder-5.jpg',
+    link: 'https://mtman.ventures',
+    technologies: ['HTML, CSS, and JavaScript', '11ty Static Site Generator', 'Netlify Website Hosting and CMS']
+  },
+  {
+    title: 'Damn Snake Game',
+    description: 'Made in Python',
+    summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
+    summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
+    imageUrl: '/blog-placeholder-4.jpg',
+    link: 'https://github.com/GeauxWeisbeck4/damn-snake-game',
+    technologies: ['Python (Turtle Module)', 'Github', 'Ubuntu Linux']
+  },
+  {
+    title: 'Geaux Pomodoro Timer',
+    description: 'Improve Productivity and Workflow',
+    summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
+    summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
+    imageUrl: '/blog-placeholder-2.jpg',
+    link: 'https://github.com/GeauxWeisbeck4/geauxpomodorotimer',
+    technologies: ['Python', 'tkinter', 'GitHub']
+  },
+  {
+    title: 'Personal Resume & Portfolio',
+    description: '@GeauxWeisbeck4 Personal Website',
+    summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
+    summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
+    imageUrl: '/blog-placeholder-1.jpg',
+    link: '#',
+    technologies: ['HTML', 'CSS Grid', 'JavaScript', 'MEAN Stack']
+  }
+];
 
-        <div class="head-two">
-            <h2>Projects I'm Proud Of</h2>
-        </div>
-      <article>
-          <div class="text">
-              <h4>Product Positioning Sprint</h4>
-              <h3>Project Website Made With Stackbit</h3>
-              <p class="blackbox">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aut nobis labore iusto repudiandae harum officia accusamus perspiciatis. Iusto molestias maiores tempore natus labore? Modi amet fugiat iusto dicta temporibus!
-              <br>
-              <br>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam at magnam blanditiis pariatur omnis assumenda quod eum, eveniet laboriosam id beatae, fuga quasi! Voluptatem deleniti sequi quia dolores, ab modi.
-              </p>
-              <br>
-              <br>
-              <p class="blackbox">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi reprehenderit ipsa voluptatum provident itaque quasi eum libero perferendis perspiciatis eius expedita facilis recusandae assumenda, ullam velit vitae sunt, officia ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam nemo voluptates fugiat quae exercitationem, saepe odio quam labore enim minus totam ipsum perspiciatis consequatur iusto tempore! Cumque, nihil voluptatibus!
-                  <br>
-                  <br>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum amet ipsam quis nemo temporibus debitis cum eligendi sunt a eum. Vitae consequatur fugiat eligendi repellendus accusantium quidem quisquam architecto soluta!
-                  <br>
-                  <br>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, amet praesentium eius atque ab sapiente rerum reprehenderit quibusdam voluptatem quas ratione vel, velit molestiae vitae, sit ex dignissimos. Nulla, aspernatur!
-                  <br><br>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda natus rem magnam aut expedita non velit iusto placeat voluptates in aliquam distinctio unde sint, omnis quaerat aliquid tempora, ipsa magni.
-                </p>
-              <h4>Technologies used include:</h4>
-              <ul>
-                  <li>Stackbit's Online Platform/Sourcebit</li>
-              </ul>
-          </div>
-          <img src="/blog-placeholder-3.jpg" alt="April Dunford Product Positioning Sprint" />
-      </article>
 
+const { projectArray, reversedProjectArray } = sortProjects(projects);
 
-    <article class="reverse">
-      <div class="text">
-        <h4>MT Man Adventures</h4>
-        <h3>Blog Website</h3>
-        <p class="blackbox">
-          This blog was created using the Jamstack framework with 11ty as my static website generator. To get started, I forked a repository from <a href="https://github.com/kevin-powell/JAMStack-blog-starter">Kevin Powell</a> and edited the HTML and CSS before I set up the config files and all the routes for my website.
-          <br>
-          <br>
-          The goal is to turn this project into a business. It also is serving as my Jamstack example for a March Madness series I am writing about on my newsletter, <a href="https://geauxweisbeck4.substack.com/">The MEANStack Developer Newsletter</a>. I intend to grow this business and sell general goods and merchandise.
-          <br>
-          <br>
-          You can view my project website here:<a href="https://mtman.ventures">MT Man Blog</a>. The original GitHub repository can be found here
-        </p>
-        <h4>Technologies used include:</h4>
-        <ul>
-          <li>HTML, CSS, and JavaScript</li>
-          <li>11ty Static Site Generator</li>
-          <li>Netlify Website Hosting and CMS</li>
-        </ul>
-      </div>
-      <img src="/blog-placeholder-5.jpg" alt="Image of MT Man Adventures website" />
-    </article>
-    <article>
-      <div class="text">
-        <h4>Damn Snake Game</h4>
-        <h3>Made in Python</h3>
-        <p class="blackbox">This is one of my favorite classic arcade games of all time. I had made this game before some years ago with HTML and JavaScript with a tutorial - oddly enough while I was first learning Python.
-        This version was much easier to make. I was surprised there was no Pygame involved in creating this; the way the tutorial showed me to do this was with Turtle which was really fun.
-        Credit to <a href="https://www.linkedin.com/in/angela-yu-963a584b/?originalSubdomain=uk">Dr. Angela Yu</a> for teaching me this in her 100 Days of Projects Python Bootcamp.
-        </p>
-        <br>
-        <br>
-        <p class="blackbox">I have to figure out how to render the game on my site still, but in the meantime you can download the game from it's GitHub Repository <a href="https://github.com/GeauxWeisbeck4/damn-snake-game">here</a>.
-        Once you are at the GitHub repository, go to the green Code button and click download zip file on the dropdown. Once you download the file, unzip the folder to wherever you can access it with your IDE.
-        Open up you Python IDE and open the main.py folder in Damn Snake Game and "Run Module". Be ready because the game starts quick! Tell me what your high score is! Mine was 9.</p>
-        <h4>Technologies used include:</h4>
-        <ul>
-          <li>Python (Turtle Module)</li>
-          <li>Github</li>
-          <li>Ubuntu Linux</li>
-        </ul>
-      </div>
-      <img src="/blog-placeholder-4.jpg" alt="Screenshot of the Damn Snake Game" />
-    </article>
-    <article class="reverse">
-      <div class="text">
-        <h4>Geaux Pomodoro Timer</h4>
-        <h3>Improve Productivity and Workflow</h3>
-        <p class="blackbox">
-          The Pomodoro (Pomodoro means tomato in Italian) Timer is a neat productivity tool that helps you work in sessions with short breaks, and after a certain number of runs, gives you a longer break. This was created based on the Pomodoro Technique, which breaks work up into four 25 minute sessions. After each work session, you are given a short break of 5 minuts. After all four work sessions are complete, you get a longer break that ranges from 15 to thirty minutes.
-          <br>
-          The theory behind this management method is that it reduces the number of internal and external workflow interruptions and allows you to get more work done than you would working for 5 minutes, then checking Facebook - another 5 minutes and then checking Twitter... you get the idea. If your activity gets interrupted, the activity must be recorded and postponed or the timer must be abandoned completely for the session.
-          <br>
-          You can view my project on <a href="https://github.com/GeauxWeisbeck4/geauxpomodorotimer">GitHub</a> for now while I work on getting it published to the website.
-        </p>
-        <h4>Technologies used include:</h4>
-        <ul>
-          <li>Python</li>
-          <li>tkinter</li>
-          <li>GitHub</li>
-        </ul>
-      </div>
-      <img src="/blog-placeholder-2.jpg" alt="Screenshot of GUI Interface" />
-    </article>
-    <article>
-      <div class="text">
-        <h4>Personal Resume & Portfolio</h4>
-        <h3>@GeauxWeisbeck4 Personal Website</h3>
-        <p class="blackbox">
-          My personal website is my resume/portfolio/personal-marketing hub. You can find my educational resources that I've found or created, research I'm currently doing, working I'm doing, etc. You can find the project page <a href="#projectspersonalsite">here</a>, read about it on <a href="#blog">my blog</a> or <a href="#personalnewsletter">subscribe to my newsletter</a>.
-        </p>
-        <h4>Technologies used include:</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS Grid</li>
-          <li>JavaScript</li>
-          <li>MEAN Stack</li>
-        </ul>
-      </div>
-        <img src="/blog-placeholder-1.jpg" alt="Screenshot of the Wall of Wonder Collections." />
-    </article>
-  </section>
-</div>
-<div class="gradient"></div>
-<div class="gradient"></div>
-  <!-- instructions in JavaScript block -->
-<div class="section-plum">
-<section id="contact">
-  <h2>Contact me</h2>
-<p>
-Do you need a full stack developer to code your dream app? Have a research opportunity? Want to hire me or donate to a project?
-  </p>
-  <p><a href="mailto:andrew@geauxweisbeck4.dev" class="button">Email me</a></p>
+const combinedProjects = [];
+for (let i = 0; i < Math.max(projectArray.length, reversedProjectArray.length); i++) {
+  if (i < projectArray.length) combinedProjects.push({ project: projectArray[i], reverse: false });
+  if (i < reversedProjectArray.length) combinedProjects.push({ project: reversedProjectArray[i], reverse: true });
+}
+---
+<section class="section-blue" id="projects">
+  <div class="head-two">
+    <h2>Featured Projects</h2>
+  </div>
+  {combinedProjects.map(({ project, reverse }) => (
+    <FeaturedProjectCard  project={project} reverse={reverse} />
+  ))}
 </section>
-

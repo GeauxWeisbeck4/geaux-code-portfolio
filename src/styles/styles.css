@@ -1,12 +1,16 @@
 :root {
     --black: #171321;
     --dkblue: #0d314b;
+    --blue: #0387C4;
+    --darkblue: #124970;
     --plum: #4b0d49;
     --hotmag: #892CDC;
-    --magenta: #03C4A1;
+    --magenta: #F80FE7;
+    --teal: #03C4A1;
     --aqua: #86fbfb;
     --white: #f7f8fa;
     --red: #C70039;
+    --orange: #f37f13;
     --font-size: 1.3rem;
     --mono: "IBM", monospace;
     --sans: Sans, sans-serif;
@@ -40,22 +44,16 @@ h3 {
 }
 
 a {
-    color: var(--magenta);
+    color: var(--teal);
 }
 
 a:hover {
-    color: var(--hotmag);
+    color: var(--magenta);
     text-decoration: none;
 }
 
 img {
     width: 100%;
-}
-
-article {
-    max-width: 1200px;
-    padding: 4rem 1rem;
-    margin: 0 auto;
 }
 
 /* background color divs */
@@ -82,8 +80,9 @@ article {
 }
 
 #intro p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.5;
+    font-family: var(--mono);
 }
 
 #intro img {
@@ -96,38 +95,163 @@ article {
 
 #intro .name {
     font-family: var(--mono);
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .name span {
     font-family: var(--sans);
-    font-size: 4rem;
-    color: var(--magenta);
+    font-size: 3rem;
+    color: var(--teal);
     display: block;
     font-weight: 300;
+    padding-top: 2rem;
+
 }
 
 #intro h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    color: var(--magenta);
+    line-height: 1.5;
+    padding-bottom: 2rem;
 }
 
 #intro h3 {
     padding-top: 10px;
 }
 
-.buttontwo {
+.about-btn {
     background-color: var(--hotmag);
     color: white;
-    padding: 0.5rem;
     border-radius: 5px;
     font-family: var(--mono);
     text-decoration: none;
+    padding: 5px;
+}
+.about-btn:hover {
+    background-color: white;
+    color: var(--hotmag);
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: bold;
+}
+.about-btn:active {
+    background-color: var(--hotmag);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.portfolio-btn {
+    background-color: var(--red);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
+    padding: 5px;
+}
+.portfolio-btn:hover {
+    background-color: white;
+    color: var(--red);
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: bold;
+}
+.portfolio-btn:active {
+    background-color: var(--red);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.buttonone {
+    background-color: var(--orange);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.buttonone:hover {
+    background-color: white;
+    color: var(--orange);
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: bold;
+}
+.buttonone:active {
+    background-color: var(--orange);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.buttontwo {
+    background-color: var(--teal);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
+    padding: 5px;
 }
 
 .buttontwo:hover {
-    color: white;
-    background-color: var(--aqua);
+    background-color: white;
+    color: var(--teal);
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: bold;
 }
+.buttontwo:active {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.buttonthree {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
+    padding: 5px;
+}
+.buttonthree:hover {
+    background-color: white;
+    color: var(--blue);
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: bold;
+}
+.buttonthree:active {
+    background-color: var(--teal);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: underline;
+    padding: 5px;
+}
+
+
 
 
 /* contact section */
@@ -172,12 +296,13 @@ nav li:first-child {
 
 nav [class*="fa-"] {
     font-size: 150%;
-    color: var(--magenta);
+    color: var(--teal);
+    border-radius: 5px;
 }
 
 nav h1 [class*="fa-"] {
     font-size: 100%;
-    color: var(--aqua);
+    color: var(--white);
 }
 
 nav a {
@@ -188,7 +313,11 @@ nav a {
 
 nav a:hover,
 nav [class*="fa-"]:hover {
-    color: var(--aqua);
+    color: var(--magenta);
+}
+
+.icon-margin {
+    margin-left: 1rem;
 }
 
 .button {
@@ -198,11 +327,12 @@ nav [class*="fa-"]:hover {
     border-radius: 5px;
     font-family: var(--mono);
     text-decoration: none;
+    margin-left: 1rem;
 }
 
 .button:hover {
     color: white;
-    background-color: var(--aqua);
+    background-color: var(--blue);
 }
 
 /* projects section */
@@ -215,6 +345,12 @@ nav [class*="fa-"]:hover {
     margin-bottom: calc(2.5rem * 1.5);
     max-width: 1200px;
     padding-left: 10rem;
+}
+
+#projects article {
+    max-width: 1200px;
+    padding: 4rem 1rem;
+    margin: 0 auto;
 }
 
 #projects h3 {
@@ -276,7 +412,12 @@ footer ul {
 @media (min-width: 800px) {
     article {
         display: grid;
+        /* grid-template-columns: repeat(10, 1fr); */
+    }
+
+    #projects article {
         grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
     }
 
     #projects img {

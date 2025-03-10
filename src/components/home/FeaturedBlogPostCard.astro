@@ -1,0 +1,106 @@
+<article class="blog-card">
+    <div class="image-div">
+        <img src="/blog-placeholder-1.jpg" alt="Blog Placeholder" />
+    </div>
+    <div>
+        <h3>Blog Post Title <span>03/09/25</span></h3>
+        <ul class="tag-list">
+            <li><a href="/tags/tag-one">Tag One</a></li>
+            <li><a href="/tags/tag-two">Tag Two</a></li>
+            <li><a href="/tags/tag-three">Tag Three</a></li>
+        </ul>
+        <p class="post-text">
+            This is the first blog post to test the components.
+        </p>
+        <a href="/blog" class="post-btn" target="_blank">Read More</a>
+    </div>
+</article>
+<style>
+    /* projects section */
+/* #projects {
+    padding: 4rem 1rem;
+} */
+
+/* .head-two h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+    max-width: 1200px;
+    padding-left: 10rem;
+} */
+/* #projects article {
+    max-width: 1200px;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+} */
+article {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 25px;
+    border: 1px solid var(--aqua);
+    background-color: var(--black);
+    color: white;
+    text-align: left;
+}
+
+
+img {
+    border-radius: 25px 25px 0 0;
+    width: 100%
+    height: auto;
+}
+
+#post h3 {
+    color: var(--aqua);
+}
+
+.card-body span {
+    color: var(--aqua);
+}
+
+#post .post-text {
+    border-radius: 10px;
+    color: white;
+    background-color: var(--black);
+    font-size: .75rem;
+    line-height: 1.5;
+}
+
+.tag-list {
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tag-list li {
+    list-style-type: none;
+    font-size: 1.25rem;
+    color: var(--teal);
+}
+.tag-list li:hover {
+    color: var(--aqua);
+}
+.post-btn {
+    background-color: var(--red);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
+    align-self: flex-end;
+    border: 2px solid white;
+}
+.post-btn:hover {
+    background-color: var(--teal);
+    border: 2px solid white;
+}
+.post-btn:active {
+    background-color: var(--red);
+    border: 3px solid white;
+}
+</style>
