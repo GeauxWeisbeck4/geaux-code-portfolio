@@ -9,8 +9,9 @@ const projects = [
     summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
     summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
     imageUrl: '/blog-placeholder-3.jpg',
+    repoLink: 'https://github.com/geauxweisbeck4/geauxweisbeck4.dev',
     link: 'https://geauxweisbeck4.dev',
-    technologies: ['Astro', 'Typescrpit', 'HTML', 'CSS']
+    technologies: ['astro', 'typescript', 'html', 'css']
   },
   {
     title: 'MT Man Adventures',
@@ -18,8 +19,9 @@ const projects = [
     summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
     summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
     imageUrl: '/blog-placeholder-5.jpg',
+    repoLink: 'https://github.com/geauxweisbeck4/mtman.ventures',
     link: 'https://mtman.ventures',
-    technologies: ['HTML, CSS, and JavaScript', '11ty Static Site Generator', 'Netlify Website Hosting and CMS']
+    technologies: ['html', 'javascript', 'eleventy', 'css', 'decap-cms']
   },
   {
     title: 'Damn Snake Game',
@@ -27,8 +29,9 @@ const projects = [
     summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
     summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
     imageUrl: '/blog-placeholder-4.jpg',
+    repoLink: 'https://github.com/geauxweisbeck4/damn-snake-game',
     link: 'https://github.com/GeauxWeisbeck4/damn-snake-game',
-    technologies: ['Python (Turtle Module)', 'Github', 'Ubuntu Linux']
+    technologies: ['python', 'turtle', 'github', 'ubuntu']
   },
   {
     title: 'Geaux Pomodoro Timer',
@@ -36,8 +39,9 @@ const projects = [
     summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
     summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
     imageUrl: '/blog-placeholder-2.jpg',
+    repoLink: 'https://github.com/GeauxWeisbeck4/geauxpomodorotimer',
     link: 'https://github.com/GeauxWeisbeck4/geauxpomodorotimer',
-    technologies: ['Python', 'tkinter', 'GitHub']
+    technologies: ['python', 'tkinter', 'github']
   },
   {
     title: 'Personal Resume & Portfolio',
@@ -45,8 +49,9 @@ const projects = [
     summaryOne: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
     summaryTwo: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
     imageUrl: '/blog-placeholder-1.jpg',
-    link: '#',
-    technologies: ['HTML', 'CSS Grid', 'JavaScript', 'MEAN Stack']
+    repoLink: 'https://github.com/geauxweisbeck4/geaux-code-portfolio',
+    link: 'https://geauxweisbeck4.dev',
+    technologies: ['astro', 'css', 'typescript']
   }
 ];
 
@@ -63,7 +68,19 @@ for (let i = 0; i < Math.max(projectArray.length, reversedProjectArray.length); 
   <div class="head-two">
     <h2>Featured Projects</h2>
   </div>
+  <div class="project-cards">
   {combinedProjects.map(({ project, reverse }) => (
     <FeaturedProjectCard  project={project} reverse={reverse} />
   ))}
+  </div>
 </section>
+<style>
+@media (min-width: 800px) {
+  .project-cards {
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+</style>

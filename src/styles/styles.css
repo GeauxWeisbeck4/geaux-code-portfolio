@@ -1,9 +1,12 @@
 :root {
     --black: #171321;
+    --herobg: #172432;
+    --herobgHover: #0f1c2b;
     --dkblue: #0d314b;
     --blue: #0387C4;
     --darkblue: #124970;
     --plum: #4b0d49;
+    --dkplum: #1c041c;
     --hotmag: #892CDC;
     --magenta: #F80FE7;
     --teal: #03C4A1;
@@ -78,7 +81,7 @@ img {
 
 
 /* intro styles */
-#intro {
+/* #intro {
     padding: 4rem 1rem 10rem 1rem;
     padding-bottom: 10rem;
     max-width: 1200px;
@@ -250,7 +253,7 @@ img {
     font-family: var(--mono);
     text-decoration: none;
     padding: 5px;
-}
+} */
 
 
 
@@ -334,20 +337,23 @@ nav [class*="fa-"]:hover {
 
 /* projects section */
 #projects {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
 .head-two h2 {
     font-size: 2.5rem;
     margin-bottom: calc(2.5rem * 1.5);
-    max-width: 1200px;
+    max-width: 1000px;
     padding-left: 10rem;
 }
 
 #projects article {
-    max-width: 1200px;
+    max-width: 1000px;
     padding: 4rem 1rem;
     margin: 0 auto;
+    border: var(--cream) solid 2px;
+    background-color: var(--dkplum);
+    border-radius: 25px;
 }
 
 #projects h3 {
@@ -357,14 +363,15 @@ nav [class*="fa-"]:hover {
 #projects h4 {
     font-size: 1rem;
     font-family: var(--mono);
+    color: var(--white);
     margin: 0;
 }
 
 .blackbox {
     padding: 1rem;
     border-radius: 10px;
-    color: cream;
-    background-color: var(--black);
+    color: var(--cream);
+    background-color: var(--dkblue);
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -372,11 +379,11 @@ nav [class*="fa-"]:hover {
 #projects ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 0.5rem;
     font-size: 1rem;
 }
 
@@ -387,7 +394,26 @@ nav [class*="fa-"]:hover {
     border-top: 1px solid var(--aqua);
     border-radius: 25px;
 }
-
+#projects .tech-tag {
+    font-style: var(--mono);
+    list-style: none;
+}
+#projects .tech-link {
+    text-decoration: none;
+    color: var(--teal);
+    font-weight: bold;
+}
+#projects .tech-link:hover {
+    text-decoration: underline;
+    color: var(--aqua);
+    font-weight: bold;
+}
+.project-cards {
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 25px;
+}
 
 /* footer section */
 footer {
@@ -409,12 +435,14 @@ footer ul {
 @media (min-width: 800px) {
     article {
         display: grid;
-        /* grid-template-columns: repeat(10, 1fr); */
+        grid-template-columns: repeat(10, 1fr);
+        border: var(--cream) solid 2px;
+        border-radius: 25px;
+        background-color: var(--dkplum);
     }
 
     #projects article {
         grid-template-columns: repeat(10, 1fr);
-        gap: 1rem;
     }
 
     #projects img {
@@ -456,8 +484,8 @@ footer ul {
     }
 
     header div:first-child {
-        flex-basis: auto;
+        /* flex-basis: auto; */
         text-align: left;
-        margin-right: auto;
+        /* margin-right: auto; */
     }
 }

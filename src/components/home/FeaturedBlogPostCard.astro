@@ -2,8 +2,8 @@
     <div class="image-div">
         <img src="/blog-placeholder-1.jpg" alt="Blog Placeholder" />
     </div>
-    <div>
-        <h3>Blog Post Title <span>03/09/25</span></h3>
+    <div class="text-div">
+        <h3>Blog Post Title</h3>
         <ul class="tag-list">
             <li><a href="/tags/tag-one">Tag One</a></li>
             <li><a href="/tags/tag-two">Tag Two</a></li>
@@ -37,7 +37,7 @@ article {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 1rem 2rem 1rem;
+    /* padding: 1rem 1rem 2rem 1rem; */
     border-radius: 25px;
     border: 1px solid var(--aqua);
     background-color: var(--black);
@@ -45,10 +45,13 @@ article {
     text-align: left;
 }
 
+.text-div {
+    padding: 1rem 2rem;
+}
 
 img {
     border-radius: 25px 25px 0 0;
-    width: 100%
+    width: 100%;
     height: auto;
 }
 

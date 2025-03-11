@@ -5,11 +5,12 @@ import FeaturedBlogPostCard from "./FeaturedBlogPostCard.astro";
     <div class="head-two">
       <h2>Recent Blog Posts</h2>
     </div>
-    <div class="posts-div">
-        <FeaturedBlogPostCard />
-        <FeaturedBlogPostCard />
-        <FeaturedBlogPostCard />
-    </div>
+        <div class="posts-div">
+            <FeaturedBlogPostCard />
+            <FeaturedBlogPostCard />
+            <FeaturedBlogPostCard />
+        </div>
+    
     
     <!-- {combinedProjects.map(({ project, reverse }) => (
       <FeaturedProjectCard  project={project} reverse={reverse} />
@@ -18,15 +19,18 @@ import FeaturedBlogPostCard from "./FeaturedBlogPostCard.astro";
 <style>
     /* Posts Section */
     #posts {
-        padding: 4rem 1rem;
+        padding: 2rem 1rem 2rem 1rem;
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
     }
+    #posts .head-two {
+
+    }
     #posts .posts-div {
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        gap: 1rem;
     }
 </style>

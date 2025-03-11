@@ -1,4 +1,4 @@
-<section id="header">
+
     <header>
         <nav>
             <div class="logo-div">
@@ -11,22 +11,22 @@
                 <a class="navlink-btn" href="/links">Links</a>
                 <a class="navlink-btn" href="/contact">Contact</a>
             </div>  
-            <div class="icon-navlinks">
+            <!-- <div class="icon-navlinks">
                 <a href="https://github.com/GeauxWeisbeck4"><span class="fa-brands fa-github"><span class="sr-only">Github</span></a>
                 <a href="https://gitlab.com/geauxweisbeck4"><span class="fa-brands fa-gitlab"><span class="sr-only">GitLab</span></a>
-                <a href="https://linkedin.com/in/geauxweisbeck4"><span class="fa-brands fa-linkedin"><span class="sr-only">LinkedIn</span></a>
+                <a href="https://linkedin.com/in/geauxweisbeck4"><span class="fa-brands fa-linkedin"><span class="sr-only">LinkedIn</span></a> -->
                 <!-- <a href="https://codepen.io/geauxweisbeck4"><span class="fa-brands fa-codepen"><span class="sr-only">Codepen</span></a> -->
-                <a href="https://dev.to/geauxweisbeck4"><span class="fa-brands fa-dev"><span class="sr-only">Dev.to</span></a>
-                <a href="https://geaux-code.hashnode.dev"><span class="fa-brands fa-hashnode"><span class="sr-only">Hashnode</span></a>
+                <!-- <a href="https://dev.to/geauxweisbeck4"><span class="fa-brands fa-dev"><span class="sr-only">Dev.to</span></a>
+                <a href="https://geaux-code.hashnode.dev"><span class="fa-brands fa-hashnode"><span class="sr-only">Hashnode</span></a> -->
                 <!-- <a href="https://geauxweisbeck4.medium.com"><span class="fa-brands fa-medium"><span class="sr-only">Medium</span></a> -->
                 <!-- <a href="https://open.spotify.com/show/6qz6bgcLCBCiyLKlMi2JyZ?si=1f03ddd722ef4b58"><span class="fa-solid fa-podcast"><span class="sr-only">Podcast</span></a> -->
-            </div>
+            <!-- </div> -->
             <div class="button-div">
                 <a href="/donate" class="button">Subscribe</a>
             </div>
         </nav>
     </header>
-</section>
+
 
 
 <style>
@@ -34,7 +34,11 @@
 header {
     font-family: var(--mono);
     font-size: 80%;
-    padding: 4rem 1rem;
+    padding: 2rem 2rem;
+    border: var(--cream) solid 2px;
+    border-radius: 25px;
+    max-width: 1200px;
+    margin: 1rem 4rem;
 }
 
 nav a {
@@ -53,7 +57,7 @@ header nav {
 
 nav a:first-child {
     flex-basis: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 nav [class*="fa-"] {
@@ -73,6 +77,7 @@ nav [class*="fa-"]:hover {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    text-align: center;
 }
 .icon-navlinks {
     display: flex;
@@ -113,7 +118,8 @@ nav [class*="fa-"]:hover {
     border-radius: 5px;
 }
 .button-div {
-    display: block;
+    display: flex;
+    flex-direction: row;
     margin-left: 2rem;
 }
 .button {
